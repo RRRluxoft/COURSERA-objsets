@@ -1,4 +1,4 @@
-
+import sbt._
 
 object Courses {
 

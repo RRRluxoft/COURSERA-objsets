@@ -1,13 +1,14 @@
-import java.io.{File, FileInputStream, IOException}
-
-import sbt.Keys._
 import sbt._
-import _root_.Settings._
+import Keys._
+import Settings._
+
+import java.io.{File, IOException, FileInputStream}
 import org.apache.commons.codec.binary.Base64
-import scalaj.http._
 
 import scala.util.parsing.json.JSON
-import scala.util.{Failure, Success, Try}
+import scalaj.http._
+
+import scala.util.{Try, Success, Failure}
 
 case class AssignmentInfo(
   key: String,

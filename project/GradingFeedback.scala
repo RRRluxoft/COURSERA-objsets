@@ -1,6 +1,6 @@
-import sbt.{Level, Logger}
+import sbt.{Logger, Level}
 
-import scala.collection.mutable.ListBuffer
+import collection.mutable.ListBuffer
 
 class GradingFeedback {
 

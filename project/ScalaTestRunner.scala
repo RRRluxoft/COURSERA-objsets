@@ -1,12 +1,10 @@
-import java.util.concurrent._
-
-import sbt.Keys._
 import sbt._
-
-import scala.collection.mutable.ListBuffer
+import Keys._
+import sys.process.{Process => SysProc, ProcessLogger}
+import java.util.concurrent._
+import collection.mutable.ListBuffer
 import scala.pickling.Defaults._
 import scala.pickling.json._
-import scala.sys.process.{ProcessLogger, Process => SysProc}
 
 final case class GradingSummary(score: Int, maxScore: Int, feedback: String)
 

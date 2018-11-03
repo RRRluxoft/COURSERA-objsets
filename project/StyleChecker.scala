@@ -1,8 +1,8 @@
-import java.io.{ByteArrayOutputStream, PrintStream}
-
-import com.typesafe.config.ConfigFactory
-import org.scalastyle._
 import sbt.File
+import java.io.ByteArrayOutputStream
+import java.io.PrintStream
+import org.scalastyle._
+import com.typesafe.config.ConfigFactory
 
 object StyleChecker {
   val maxResult = 100
